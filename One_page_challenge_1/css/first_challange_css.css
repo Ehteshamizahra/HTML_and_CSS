@@ -1,0 +1,147 @@
+body{
+    background-color: rgb(132, 130, 130);
+    margin: 0;
+}
+@media screen and (max-width:600px) {
+    p {
+        color: blue;
+    }
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 3em;
+}
+h2 {
+    font-size: 1em;
+}
+
+.navbar {
+    top: 0;
+    background-color: rgb(72, 71, 71);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+}
+.navbar a {
+    top: 0;
+    float: left;
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 25px;
+}
+.navbar a:hover {
+    color: rgb(2, 18, 2);
+    background: rgb(221, 221, 221);
+
+}
+.container {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: black;
+    padding-top: 70px;
+    padding-left: 0;
+    margin-left: 0;
+    
+}
+img {
+    display: block;
+    margin: 0 auto;
+    margin-left: 0;
+    filter: saturate(200%) brightness(100%);
+    border-radius: 20px;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.container img:hover {
+    opacity:0.2;
+}
+.overlay {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    background-color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.overlay-video {
+    position: absolute;
+    top: 1750px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    background-color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+
+}
+.text-effect {
+    margin: 30px auto;
+    font-size: 20px;
+    border: 1px dashed white;
+}
+.text-effect:hover {
+    color: yellow;
+}
+.column1 {
+    flex: 30%;
+    padding-left: 7px;
+    height: 200px;
+    background-color: rgb(209, 218, 225);
+    color: blueviolet;
+}
+.column2 {
+    flex: 70%;
+    padding-left: 7px;
+    height: 200px;
+    background-color: aliceblue;
+    color: rgb(198, 129, 46);
+}
+
+.row {
+    display: flex;
+}
+
+table, th, td {
+    border: 2px solid black;
+    grid: 1px solid;
+    width: 50% auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    padding: 2%;
+}
+
+.t-header {
+    background-color: rgb(215, 215, 36);
+}
+.t-content {
+    background-color: white;
+}
+.wider {
+    width: 100px;
+}
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
