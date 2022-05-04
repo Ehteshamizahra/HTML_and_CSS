@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <title> ShapUp </title>
         <link rel="stylesheet" href="./css/shared.css">
-        <link rel="stylesheet" href="./css/animations.css">             
+        <link rel="stylesheet" href="./css/animations.css">   
+        <script src="JS/one_page.js" defer></script>     
+             
 
     </head>
     <body>
@@ -145,7 +147,7 @@
                     <!--PHOTO CONTAINER 9-->
                     <div class="photo-container">
                         <div class="photo">
-                            <img src="./Images/exerciseApp_images/thumbnail_9.png" alt="" >
+                            <img src="./Images/exerciseApp_images/thumbnail_9.png"  alt="" >
                             <div class="photo-overlay">
                                 <h3 class="white-head">Click to Enlarge</h3>
                                 <p>We have several features to tailor the workout to your needs.</p>
@@ -158,6 +160,71 @@
             </div>
         </section>
         <!--END GALLERRY-->
+        <!--Functional lighbox-->
+        <h2 style="text-align:center">Lightbox</h2>
+
+        <div class="row">
+            <div class="column">
+                <img src="./Images/exerciseApp_images/thumbnail_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./Images/exerciseApp_images/thumbnail_2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./Images/exerciseApp_images/thumbnail_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="./Images/exerciseApp_images/thumbnail_1.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="./Images/exerciseApp_images/thumbnail_1.png" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="./Images/exerciseApp_images/thumbnail_2.png" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="./Images/exerciseApp_images/thumbnail_3.png" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./Images/exerciseApp_images/thumbnail_4.png" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+          
+              <div class="column">
+                <img class="demo cursor" src="./Images/exerciseApp_images/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./Images/exerciseApp_images/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./Images/exerciseApp_images/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./Images/exerciseApp_images/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="">
+              </div>
+            </div>
+          </div>
+
 
         <!--RSVP-->
         <section id="register">
